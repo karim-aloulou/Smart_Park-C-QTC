@@ -26,14 +26,12 @@ CONFIG += c++11
 
 SOURCES += \
     etudiante.cpp \
-    etudiante2.cpp \
         main.cpp \
         mainwindow.cpp \
     connection.cpp
 
 HEADERS += \
     etudiante.h \
-    etudiante2.h \
         mainwindow.h \
     connection.h
 
