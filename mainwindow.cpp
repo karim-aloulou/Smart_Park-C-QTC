@@ -161,3 +161,21 @@ void MainWindow::on_PDF_clicked()
 
 }
 
+
+/*void MainWindow::on_pushButton_4_clicked()
+{
+    Smtp* smtp = new Smtp("recruitcenter977@gmail.com","emna123","smtp.gmail.com",465);
+
+                    connect(smtp, SIGNAL(status(QString)), this, SLOT(mailSent(QString)));
+                    smtp->sendMail("recruitcenter977@gmail.com",ui->pushButton_4->text(),ui->subject_2->text(),ui->msg2->text());
+
+}*/
+
+void MainWindow::on_pushButton_3_clicked()
+{
+
+
+
+        ui->tableView->setModel(P->recherche(ui->lineEdit->text()));
+
+}

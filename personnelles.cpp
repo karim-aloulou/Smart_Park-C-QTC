@@ -84,55 +84,21 @@ bool personelles:: modiffier(){
 
 }
 
-QSqlQueryModel * personelles::rechercheCIN()
-{
-    QSqlQueryModel * model=new QSqlQueryModel();
-    model->setQuery("select * from PERSONNELLES order by CIN ");
-    model->setHeaderData(0,Qt::Horizontal,QObject::tr("CIN"));
-    model->setHeaderData(1,Qt::Horizontal,QObject::tr("nom"));
-    model->setHeaderData(2,Qt::Horizontal,QObject::tr("prenom"));
-    model->setHeaderData(3,Qt::Horizontal,QObject::tr("grade"));
-    model->setHeaderData(4,Qt::Horizontal,QObject::tr("date"));
-    model->setHeaderData(5,Qt::Horizontal,QObject::tr("numtel"));
-    model->setHeaderData(3,Qt::Horizontal,QObject::tr("Email"));
-    model->setHeaderData(3,Qt::Horizontal,QObject::tr("adresse"));
+
+QSqlQueryModel * personelles::recherche(QString a)
+{QSqlQueryModel * model= new QSqlQueryModel();
+model->setQuery("select * from PERSONNELLES WHERE ( CIN LIKE '%"+a+"%' OR NOM LIKE '%"+a+"%' OR PRENOM LIKE '%"+a+"%'OR ADDRESSE LIKE '%"+a+"%' OR DATEN LIKE '%"+a+"%' OR NUMEROTLF LIKE '%"+a+"%'OR EMAIL '%"+a+"%'OR GRADE LIKE '%"+a+"%')");
+model->setHeaderData(0, Qt::Horizontal, QObject::tr("CIN"));
+model->setHeaderData(1, Qt::Horizontal, QObject::tr("nom"));
+model->setHeaderData(2, Qt::Horizontal, QObject::tr("prenom"));
+model->setHeaderData(3, Qt::Horizontal, QObject::tr("grade"));
+model->setHeaderData(4, Qt::Horizontal, QObject::tr("date"));
+model->setHeaderData(4, Qt::Horizontal, QObject::tr("numtel"));
+model->setHeaderData(4, Qt::Horizontal, QObject::tr("Email"));
+model->setHeaderData(4, Qt::Horizontal, QObject::tr("adresse"));
 
 
 
-    return model;
-
+return model;
 }
-
-QSqlQueryModel * personelles::rechercheNom()
-{
-    QSqlQueryModel * model=new QSqlQueryModel();
-    model->setQuery("select * from PERSONNELLES order by  NOM ");
-    model->setHeaderData(0,Qt::Horizontal,QObject::tr("CIN"));
-    model->setHeaderData(1,Qt::Horizontal,QObject::tr("nom"));
-    model->setHeaderData(2,Qt::Horizontal,QObject::tr("prenom"));
-    model->setHeaderData(3,Qt::Horizontal,QObject::tr("grade"));
-    model->setHeaderData(4,Qt::Horizontal,QObject::tr("date"));
-    model->setHeaderData(5,Qt::Horizontal,QObject::tr("numtel"));
-    model->setHeaderData(3,Qt::Horizontal,QObject::tr("Email"));
-    model->setHeaderData(3,Qt::Horizontal,QObject::tr("adresse"));
-    return model;
-
-}
-
-QSqlQueryModel * personelles::recherchePrenom()
-{
-    QSqlQueryModel * model=new QSqlQueryModel();
-    model->setQuery("select * from PERSONNELLES order PRENOM ");
-    model->setHeaderData(0,Qt::Horizontal,QObject::tr("CIN"));
-    model->setHeaderData(1,Qt::Horizontal,QObject::tr("nom"));
-    model->setHeaderData(2,Qt::Horizontal,QObject::tr("prenom"));
-    model->setHeaderData(3,Qt::Horizontal,QObject::tr("grade"));
-    model->setHeaderData(4,Qt::Horizontal,QObject::tr("date"));
-    model->setHeaderData(5,Qt::Horizontal,QObject::tr("numtel"));
-    model->setHeaderData(3,Qt::Horizontal,QObject::tr("Email"));
-    model->setHeaderData(3,Qt::Horizontal,QObject::tr("adresse"));
-    return model;
-
-}
-
 

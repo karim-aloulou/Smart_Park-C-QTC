@@ -21,10 +21,12 @@ private slots:
 
     void on_delete_2_clicked();
 
-    void on_recherche_clicked();
-
 
     void on_PDF_clicked();
+
+    void on_pushButton_4_clicked();
+
+    void on_pushButton_3_clicked();
 
 private:
     Ui::MainWindow *ui;

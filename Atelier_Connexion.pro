@@ -25,12 +25,14 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+    email.cpp \
         main.cpp \
         mainwindow.cpp \
     connection.cpp \
     personnelles.cpp
 
 HEADERS += \
+    email.h \
         mainwindow.h \
     connection.h \
     personnelles.h

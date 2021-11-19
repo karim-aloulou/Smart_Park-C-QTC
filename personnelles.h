@@ -40,9 +40,7 @@ public:
      QSqlQueryModel * afficher();
 
     bool supprimer(int);
-    QSqlQueryModel * rechercheCIN();
-    QSqlQueryModel * rechercheNom();
-    QSqlQueryModel * recherchePrenom();
+QSqlQueryModel * recherche(QString a);
 
     bool modiffier();
 
