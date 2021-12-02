@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui sql network printsupport multimedia
+QT       += core gui sql network printsupport multimedia serialport
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
