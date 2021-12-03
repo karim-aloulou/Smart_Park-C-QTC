@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow1</class>
+ <widget class="QMainWindow" name="MainWindow1">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1008</width>
+    <height>648</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Gestion des Clients</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>851</width>
+      <height>631</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Réservation place parking </string>
+    </property>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>791</width>
+       <height>541</height>
+      </rect>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>ajouter une réservation</string>
+      </attribute>
+      <widget class="QGroupBox" name="groupBox_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>831</width>
+         <height>491</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>ajout</string>
+       </property>
+       <widget class="QLabel" name="le_id_2">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>30</y>
+          <width>111</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Perpetua</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Id place parking</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="le_id">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>30</y>
+          <width>113</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>70</y>
+          <width>56</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>ID_v</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>130</y>
+          <width>111</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Type Parking</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="type_parking">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>120</y>
+          <width>113</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_5">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>180</y>
+          <width>131</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Perpetua</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Date de Reservation</string>
+        </property>
+       </widget>
+       <widget class="QDateEdit" name="date">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>180</y>
+          <width>110</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>230</y>
+          <width>141</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Perpetua</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>temps de reservation</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_7">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>230</y>
+          <width>56</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>De</string>
+        </property>
+       </widget>
+       <widget class="QTimeEdit" name="heure">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>230</y>
+          <width>71</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QTimeEdit" name="heure_2">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>230</y>
+          <width>118</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_8">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>230</y>
+          <width>51</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>à</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ajouter">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>90</y>
+          <width>111</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Perpetua</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>ajouter</string>
+        </property>
+       </widget>
+       <widget class="QTableView" name="tab_reservation">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>270</y>
+          <width>581</width>
+          <height>192</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_afficher">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>160</y>
+          <width>111</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Perpetua</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Afficher</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_id">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>70</y>
+          <width>91</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="tri_type">
+        <property name="geometry">
+         <rect>
+          <x>610</x>
+          <y>230</y>
+          <width>141</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>tri par type parking</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="tri_date_ASC">
+        <property name="geometry">
+         <rect>
+          <x>582</x>
+          <y>60</y>
+          <width>141</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>tri par date ASC</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="tri_date_DESC">
+        <property name="geometry">
+         <rect>
+          <x>592</x>
+          <y>100</y>
+          <width>131</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>tri par date DESC</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="tri_heure_ASC">
+        <property name="geometry">
+         <rect>
+          <x>592</x>
+          <y>140</y>
+          <width>131</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>tri par heure ASC</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="tri_heure_DESC">
+        <property name="geometry">
+         <rect>
+          <x>592</x>
+          <y>190</y>
+          <width>141</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>tri par heure DESC</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pb_stat">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>290</y>
+          <width>141</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>afficher les statistics</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="mailing">
+        <property name="geometry">
+         <rect>
+          <x>640</x>
+          <y>360</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>send mail</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>modifier une réservation</string>
+      </attribute>
+      <widget class="QGroupBox" name="groupBox_3">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>30</y>
+         <width>441</width>
+         <height>331</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>modifier</string>
+       </property>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>80</y>
+          <width>56</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>date</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="modifier">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>240</y>
+          <width>171</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>modifier</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_9">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>50</y>
+          <width>56</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>id</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="le_id_3">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>50</y>
+          <width>113</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="heure_3">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>120</y>
+          <width>111</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="type_parking_2">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>160</y>
+          <width>111</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_10">
+        <property name="geometry">
+         <rect>
+          <x>35</x>
+          <y>120</y>
+          <width>51</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>heure</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_11">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>160</y>
+          <width>81</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>type_parking</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_12">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>190</y>
+          <width>56</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>id_v</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="combobox_id">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>200</y>
+          <width>111</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QDateEdit" name="date_2">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>90</y>
+          <width>110</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>supprimer une réservation</string>
+      </attribute>
+      <widget class="QGroupBox" name="groupBox_4">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>60</y>
+         <width>291</width>
+         <height>201</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>supprimer</string>
+       </property>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>60</y>
+          <width>56</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>id</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="le_id_supp">
+        <property name="geometry">
+         <rect>
+          <x>92</x>
+          <y>60</y>
+          <width>131</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="supprimer">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>120</y>
+          <width>93</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>supprimer</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
