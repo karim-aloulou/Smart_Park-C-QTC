@@ -225,22 +225,7 @@ void MainWindow::on_generer_pdf_clicked()
     V1.genererPDFact();
 }
 
-void MainWindow::on_imprimer_clicked()
-{
-    QPrinter printer;
-    QPrintDialog dialog(&printer,this);
-    dialog.setWindowTitle("Impression d'Attestation");
-    if (ui->tab_visiteur)
 
-          {
-              dialog.addEnabledOption(QAbstractPrintDialog::PrintSelection);
-          }
-
-      if(dialog.exec()!=QDialog::Accepted)
-      {
-          return;
-      }
-}
 
 
 void MainWindow::on_sendBtn_clicked()
@@ -259,5 +244,22 @@ void MainWindow::on_sendBtn_clicked()
     smtp.login();
     smtp.sendMail(message);
     smtp.quit();
+}
+
+void MainWindow::on_imprimer_clicked()
+{
+    QPrinter printer;
+    QPrintDialog dialog(&printer,this);
+    dialog.setWindowTitle("Impression d'Attestation");
+    if (ui->tab_visiteur)
+
+          {
+              dialog.addEnabledOption(QAbstractPrintDialog::PrintSelection);
+          }
+
+      if(dialog.exec()!=QDialog::Accepted)
+      {
+          return;
+      }
 }
 
