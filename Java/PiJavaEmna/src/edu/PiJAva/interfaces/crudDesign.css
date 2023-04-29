@@ -1,0 +1,64 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 11 avr. 2023, 02:00:44
+    Author     : Mouad
+*/
+
+.white-form{
+     -fx-background-color: #fff;
+     -fx-background-radius: 8px;
+}
+
+.border{
+    -fx-border-color: linear-gradient(to bottom right, #9e20a2, #5a3375);
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px;
+    
+}
+
+.btn{
+    -fx-background-color: linear-gradient(to bottom right,#0D6EFD, #0246AC);
+    -fx-text-fill:#fff;
+    -fx-font-size:#12px;
+    -fx-cursor: hand;
+}
+
+.btn:hover{
+    
+        -fx-background-color: linear-gradient(to bottom right,#a914ae, #7f4fa4);
+
+}
+.table-view{
+    -fx-padding: 0px;
+    -fx-background-color: transparent;
+    -fx-border-color: linear-gradient(to bottom right,#9e20a2, #5a3375);
+    -fx-border-radius: 5px;
+    -fx-border-width: 2px;
+}
+
+
+.table-view .column-header{
+   -fx-alignment: CENTER; 
+}
+
+.table-view .column-header-background{
+   -fx-background-color: linear-gradient(to bottom right,#9e20a2, #5a3375);
+   -fx-background-radius: 8px 8px 0 0;
+   -fx-background-inset: 0 0 0 0;
+}
+
+.table-view .column-header, .filler{
+    -fx-background-color: transparent;
+    -fx-size: 30px;
+}
+
+.table-view .column-header .label{
+    -fx-text-fill: #fff;
+    
+}
+
+

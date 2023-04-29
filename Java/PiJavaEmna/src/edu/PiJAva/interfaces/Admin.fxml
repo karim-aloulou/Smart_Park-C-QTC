@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="713.0" prefWidth="1112.0" style="-fx-background-color: #E1E9FA;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.PiJAva.interfaces.AdminController">
+   <children>
+      <AnchorPane opacity="0.82" prefHeight="731.0" prefWidth="268.0" style="-fx-background-color: #FEFEFE;">
+         <children>
+            <Button layoutX="15.0" layoutY="185.0" mnemonicParsing="false" onAction="#Dashbord" prefHeight="26.0" prefWidth="230.0" styleClass="btn" stylesheets="@crudDesign.css" text="Dashbord" textFill="#012970" />
+            <Button layoutX="16.0" layoutY="249.0" mnemonicParsing="false" onAction="#DepotConstat" prefHeight="26.0" prefWidth="230.0" styleClass="btn" stylesheets="@crudDesign.css" text="Dépot Constat" textFill="#012970">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font></Button>
+            <Button layoutX="14.0" layoutY="309.0" mnemonicParsing="false" onAction="#Facture" prefHeight="26.0" prefWidth="238.0" styleClass="btn" stylesheets="@crudDesign.css" text="Facture" textFill="#012970" />
+            <Button layoutX="15.0" layoutY="127.0" mnemonicParsing="false" onAction="#Profile" prefHeight="26.0" prefWidth="230.0" styleClass="btn" stylesheets="@crudDesign.css" text="Profile" textFill="#012970" />
+            <Button layoutX="16.0" layoutY="366.0" mnemonicParsing="false" onAction="#Reclamation" prefHeight="26.0" prefWidth="238.0" styleClass="btn" stylesheets="@crudDesign.css" text="Réclamation" textFill="#012970" />
+            <Button layoutX="16.0" layoutY="421.0" mnemonicParsing="false" onAction="#ListUser" prefHeight="30.0" prefWidth="238.0" styleClass="btn" stylesheets="@crudDesign.css" text="List of users" textFill="#012970" />
+         </children>
+      </AnchorPane>
+      <Button layoutX="980.0" layoutY="653.0" mnemonicParsing="false" onAction="#LogOut" styleClass="btn" stylesheets="@crudDesign.css" text="Log Out" textFill="#012970" />
+      <AnchorPane layoutX="2.0" layoutY="-7.0" prefHeight="85.0" prefWidth="1117.0" style="-fx-background-color: #FEFEFE;">
+         <children>
+            <ImageView fitHeight="27.0" fitWidth="168.0" layoutX="14.0" layoutY="18.0">
+               <image>
+                  <Image url="@../../../IMAGES/logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="46.0" fitWidth="31.0" layoutX="689.0" layoutY="8.0">
+               <image>
+                  <Image url="@../../../IMAGES/724-7249339_alert-notification-icon-hd-png-download-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="46.0" fitWidth="39.0" layoutX="760.0" layoutY="6.0">
+               <image>
+                  <Image url="@../../../IMAGES/images-removebg-preview%20(2).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="46.0" fitWidth="31.0" layoutX="834.0" layoutY="8.0">
+               <image>
+                  <Image url="@../../../IMAGES/png-clipart-user-computer-icons-sprite-sprite-blue-logo-thumbnail-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="TxUserName" layoutX="897.0" layoutY="21.0" prefHeight="21.0" prefWidth="194.0" style="-fx-background-color: #E1E9FA;" />
+            <ImageView fitHeight="121.0" fitWidth="385.0" layoutX="234.0" layoutY="-39.0">
+               <image>
+                  <Image url="@../../../IMAGES/search-bar-horizontal-linear-border-text-input-field-magnifying-glass-icon-frame-simple-flat-searching-button-design-161303867-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

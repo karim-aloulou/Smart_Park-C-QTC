@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="654.0" prefWidth="1256.0" style="-fx-background-color: #E1E9FA;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.PiJAva.interfaces.UserListController">
+   <children>
+      <Button layoutX="1120.0" layoutY="693.0" mnemonicParsing="false" onAction="#LogOut" styleClass="btn" stylesheets="@crudDesign.css" text="Log Out" textFill="#012970" />
+      <TableView fx:id="tvuser" layoutX="380.0" layoutY="211.0" opacity="0.8" prefHeight="482.0" prefWidth="662.0" style="-fx-background-color: #FEFEFE; -fx-border-radius: 20;">
+         <columns>
+            <TableColumn fx:id="cnom" prefWidth="77.0" text="Nom" />
+            <TableColumn fx:id="cprenom" prefWidth="113.0" text="Prenom" />
+            <TableColumn fx:id="cemail" prefWidth="259.0" text="Email" />
+            <TableColumn fx:id="crole" prefWidth="190.0" text="Role" />
+         </columns>
+      </TableView>
+      <Button layoutX="371.0" layoutY="155.0" mnemonicParsing="false" onAction="#resfreshuser" prefHeight="31.0" prefWidth="138.0" style="-fx-background-radius: 10;" styleClass="btn" stylesheets="@crudDesign.css" text="Refresh" textFill="#012970">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="883.0" layoutY="163.0" mnemonicParsing="false" onAction="#remove" prefHeight="31.0" prefWidth="138.0" style="-fx-background-radius: 10;" styleClass="btn" stylesheets="@crudDesign.css" text="Delete " textFill="#012970">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="8.0" layoutY="105.0" opacity="0.75" prefHeight="559.0" prefWidth="316.0" style="-fx-background-color: #FEFEFE; -fx-border-radius: 20;">
+         <children>
+            <Button layoutX="45.0" layoutY="181.0" mnemonicParsing="false" onAction="#Dashbord" prefHeight="26.0" prefWidth="230.0" styleClass="btn" stylesheets="@crudDesign.css" text="Dashbord" textFill="#012970" />
+            <Button layoutX="45.0" layoutY="264.0" mnemonicParsing="false" onAction="#DepotConstat" prefHeight="26.0" prefWidth="230.0" styleClass="btn" stylesheets="@crudDesign.css" text="Dépot Constat" textFill="#012970">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="41.0" layoutY="356.0" mnemonicParsing="false" onAction="#Facture" prefHeight="26.0" prefWidth="238.0" styleClass="btn" stylesheets="@crudDesign.css" text="Facture" textFill="#012970" />
+            <Button layoutX="45.0" layoutY="97.0" mnemonicParsing="false" onAction="#Profile" prefHeight="26.0" prefWidth="230.0" styleClass="btn" stylesheets="@crudDesign.css" text="Profile" textFill="#012970" />
+            <Button layoutX="41.0" layoutY="436.0" mnemonicParsing="false" onAction="#Reclamation" prefHeight="26.0" prefWidth="238.0" styleClass="btn" stylesheets="@crudDesign.css" text="Réclamation" textFill="#012970" />
+            <Button layoutX="41.0" layoutY="514.0" mnemonicParsing="false" onAction="#ListUser" prefHeight="30.0" prefWidth="238.0" styleClass="btn" stylesheets="@crudDesign.css" text="List of users" textFill="#012970" />
+         </children>
+      </AnchorPane>
+      <AnchorPane opacity="0.9" prefHeight="82.0" prefWidth="1275.0" style="-fx-background-color: #FEFEFE;">
+         <children>
+            <ImageView fitHeight="27.0" fitWidth="168.0" layoutX="14.0" layoutY="18.0">
+               <image>
+                  <Image url="@../../../IMAGES/logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="46.0" fitWidth="31.0" layoutX="808.0" layoutY="19.0">
+               <image>
+                  <Image url="@../../../IMAGES/724-7249339_alert-notification-icon-hd-png-download-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="46.0" fitWidth="39.0" layoutX="891.0" layoutY="22.0">
+               <image>
+                  <Image url="@../../../IMAGES/images-removebg-preview%20(2).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="46.0" fitWidth="31.0" layoutX="995.0" layoutY="19.0">
+               <image>
+                  <Image url="@../../../IMAGES/png-clipart-user-computer-icons-sprite-sprite-blue-logo-thumbnail-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="TxUserName" layoutX="1042.0" layoutY="31.0" prefHeight="21.0" prefWidth="194.0" style="-fx-background-color: #E1E9FA;" />
+         </children>
+      </AnchorPane>
+      <TextField fx:id="search" layoutX="652.0" layoutY="163.0" />
+      <Label layoutX="577.0" layoutY="168.0" text="chercher:" />
+      <Button fx:id="Exporter" layoutX="1088.0" layoutY="611.0" mnemonicParsing="false" onAction="#Exporter" prefHeight="31.0" prefWidth="138.0" style="-fx-background-radius: 10;" styleClass="btn" stylesheets="@crudDesign.css" text="Exporter" textFill="#012970">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
